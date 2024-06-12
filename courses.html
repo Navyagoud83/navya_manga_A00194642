@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .app-bar {
+            font-size: 24px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .back-button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+        }
+        .link-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px;
+        }
+        .link-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .link-bar a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .course {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+            margin: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .course img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+        .course h2 {
+            margin: 15px 0;
+        }
+        .course p {
+            font-size: 16px;
+            color: #555;
+        }
+        .right-half {
+            width: 35%;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .right-half button {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        .right-half select {
+            font-size: 16px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5999;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-instagram {
+            background: #125688;
+            color: pink;
+        }
+        .label {
+            margin: 10px;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-bar">Course</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search Courses...">
+            <button class="back-button">Back</button>
+        </div>
+    </header>
+
+  
+
+    <main>
+        <div class="course">
+            <h1 class="course-name">Name of course</h1>
+            <h3<p class="course-outline">Course Outline</p></h3>
+           <h3<p class="bookmarks">Bookmarks</p></h3>
+           <h3<p class="communication">Communication</p></h3>
+            <h3<p class="overview">Overview</p></h3>
+            <h3<p class="classlist">Classlist</p></h3>
+        </div>
+
+        <div class="right-half clearfix">
+            <button>Calendar <i class="material-icons">event</i></button>
+            <form>
+                
+            </form>
+            <table bgcolor="lightgrey" align="right">
+              
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+            <select name="event" id="event">
+                    <option value="upcoming event">Upcoming Event</option>
+                </select>
+        </div>
+    </main>
+
+    <footer>
+        </html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<DIV align="left"><p>Follow Us</p><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5999;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: pink;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+</DIV>
+
+</body>
+</html>
+ <nav class="link-bar">
+ <DIV align="center"><div class="label contact-us">Contact Us</div><meta name="viewport" content="width=device-width, initial-scale=1">
+        <a href="#">Home</a>
+        <a href="#">Tech Support</a>
+        <a href="#">Academic Support</a>
+    </nav>
+    </footer>
+</body>
+</html>
+    </footer>
+</body>
+</html>
